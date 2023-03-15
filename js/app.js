@@ -32,8 +32,10 @@ AFRAME.registerComponent('markercontroller', {
         createUnityMatrix(this.el.object3D).decompose(position, rotation, scale);
 
         const serializedInfos = `${this.data.name},${this.el.object3D.visible},${position.toArray()},${rotation.toArray()},${scale.toArray()}`;
-
+        console.log("testStart");
         if(isDetectionManagerReady){
+            console.log("++++++++++++++++++++++++++");
+            console.log(serializedInfos);
           unityInstance.SendMessage("DetectionManager", "markerInfos", serializedInfos);
         }
     } 
