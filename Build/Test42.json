@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "AWRTTest",
+"productVersion": "0.1",
+"dataUrl": "Test42.data.unityweb",
+"wasmCodeUrl": "Test42.wasm.code.unityweb",
+"wasmFrameworkUrl": "Test42.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.40f1"
+}
