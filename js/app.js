@@ -44,7 +44,6 @@ AFRAME.registerComponent('markercontroller', {
 
 AFRAME.registerComponent('cameratransform', {
     tock: function(time, timeDelta){
-            console.log("testStart");
         let camtr = new THREE.Vector3();
         let camro = new THREE.Quaternion();
         let camsc = new THREE.Vector3();
@@ -85,7 +84,6 @@ AFRAME.registerComponent('cameratransform', {
 
 AFRAME.registerComponent('copycanvas', {
     tick: function(time, timeDelta){
-        console.log("testStart");
         const unityCanvas = document.getElementsByTagName('canvas')[0];
         unityCanvas.width = this.el.canvas.width
         unityCanvas.height = this.el.canvas.height
