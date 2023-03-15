@@ -67,7 +67,7 @@ var Qb=[Ik,Zh,_h,Qj,Qi,Pi,Ri,Ag,sg,qg,rg,yg,kh,jh,Oi,Mj];var Rb=[Jk,ki,ji,gi];va
 		this.canvas = document.createElement('canvas');
 		this.canvas.width = w;
 		this.canvas.height = h;
-		this.ctx = this.canvas.getContext('2d');
+		this.ctx = this.canvas.getContext('2d', {willReadFrequently: true});
 
 		this.videoWidth = w;
 		this.videoHeight = h;
